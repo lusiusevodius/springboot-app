@@ -11,7 +11,7 @@ pipeline {
         stage('Containerized Apps') {
             steps {
                 sh'''
-                docker build -t 28011997/springboot-app .
+                docker build -t 28011997/springboot-app:v3 .
                 '''
             }
         }
@@ -19,7 +19,7 @@ pipeline {
         stage('Push to Registry') {
             steps {
                 sh'''
-                docker push 28011997/springboot-app
+                docker push 28011997/springboot-app:v3
                 '''
             }
         }
