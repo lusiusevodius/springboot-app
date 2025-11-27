@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ct-app
-        image: 28011997/springboot-app
+        image: 28011997/springboot-app:v3
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
